@@ -33,5 +33,6 @@
 
 ```bash
 python3 main.py [Folder path]
+```
 
-## Special circumstances may lead to misjudgement
+- Special circumstances may lead to misjudgement
