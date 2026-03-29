@@ -8,7 +8,7 @@
 
 - **Ultra-lightweight**: The model is only 274KB and can be embedded in any device
 - **High-speed inference**: 7ms per image on CPU, can process 140 images per second
-- **High accuracy**: 100% for standard poses, 50% for difficult poses
+- **High accuracy**: 100% for standard poses, 25% for difficult poses
 - **Cross-platform**: Supports ONNX format, can run on browsers and mobile devices
 - **Easy deployment**: No GPU required, no complex environment needed
 
@@ -32,7 +32,11 @@
 ## Instructions for use
 
 ```bash
-python3 main.py [Folder path]
-```
+pip install onnxruntime pillow numpy
 
-- Special circumstances may lead to misjudgement
+mkdir inputs
+
+cp [your images] inputs/
+
+python3 main.py > result.json
+```
